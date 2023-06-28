@@ -1,0 +1,107 @@
+{
+  "id": "44336afc-e832-4137-b539-07ed4120303f",
+  "version": "2.0",
+  "name": "DiM Smoke",
+  "url": "https://app.destinyitemmanager.com/login",
+  "tests": [{
+    "id": "9c2f3359-f27b-4708-84b3-24b5f39d4757",
+    "name": "01 Sign UP",
+    "commands": [{
+      "id": "84c13cc2-0c22-4b77-ab52-33278a79be09",
+      "comment": "",
+      "command": "open",
+      "target": "https://app.destinyitemmanager.com/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f2eceb4a-5aee-4957-afd8-ca9b39f645d1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Авторизоваться с помощью Bungie.net",
+      "targets": [
+        ["linkText=Авторизоваться с помощью Bungie.net", "linkText"],
+        ["css=.fjefWfiB", "css:finder"],
+        ["xpath=//a[contains(text(),'Авторизоваться с помощью Bungie.net')]", "xpath:link"],
+        ["xpath=//div[@id='app']/div/div/div/p[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.bungie.net/en/OAuth/Authorize?client_id=13672&response_type=code&state=583fc648-f578-491e-b823-797013c3dca1')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Авторизоваться с помощью Bungie.net')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "724b2dfd-7fb3-48f6-82be-819f61eb5009",
+      "comment": "",
+      "command": "click",
+      "target": "css=.provider-selector-btn:nth-child(3) .provider-icon",
+      "targets": [
+        ["css=.provider-selector-btn:nth-child(3) .provider-icon", "css:finder"],
+        ["xpath=//div[@id='user-container']/div/div[3]/a[3]/div/img", "xpath:idRelative"],
+        ["xpath=//a[3]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2109d8e5-febc-4eff-b3a2-8072d8efa669",
+      "comment": "",
+      "command": "click",
+      "target": "id=imageLogin",
+      "targets": [
+        ["id=imageLogin", "id"],
+        ["css=#imageLogin", "css:finder"],
+        ["xpath=//input[@id='imageLogin']", "xpath:attributes"],
+        ["xpath=//form[@id='openidForm']/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b8aee9b-648a-42e8-b942-e4d8a01c3810",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Destiny 2",
+      "targets": [
+        ["linkText=Destiny 2", "linkText"],
+        ["css=.A9Xa62lt", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/4611686018468692732/d2/4611686018468692732/d2/inventory')]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Destiny 2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4e791b97-c9eb-4abb-92bf-160ac1c255df",
+    "name": "02 Log IN",
+    "commands": [{
+      "id": "291ba7e4-4e53-4602-af09-00136ca00588",
+      "comment": "",
+      "command": "open",
+      "target": "https://app.destinyitemmanager.com/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c2ef342-1921-46f0-bbc7-17ab9e37a5be",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Авторизоваться с помощью Bungie.net",
+      "targets": [
+        ["linkText=Авторизоваться с помощью Bungie.net", "linkText"],
+        ["css=.fjefWfiB", "css:finder"],
+        ["xpath=//a[contains(text(),'Авторизоваться с помощью Bungie.net')]", "xpath:link"],
+        ["xpath=//div[@id='app']/div/div/div/p[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.bungie.net/en/OAuth/Authorize?client_id=13672&response_type=code&state=583fc648-f578-491e-b823-797013c3dca1')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Авторизоваться с помощью Bungie.net')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b6f20875-dcbc-4705-a281-de84ef36c3d7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9c2f3359-f27b-4708-84b3-24b5f39d4757"]
+  }],
+  "urls": ["https://app.destinyitemmanager.com/login"],
+  "plugins": []
+}
